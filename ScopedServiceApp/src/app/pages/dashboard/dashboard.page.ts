@@ -1,26 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { MyScopedService } from '../../services/my-scoped-service.service';
-
+import { WidgetOneComponent } from '../../components/widget-one/widget-one.component';
+import { WidgetTwoComponent } from '../../components/widget-two/widget-two.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, IonicModule],
+  imports: [CommonModule, IonicModule, WidgetOneComponent, WidgetTwoComponent],
   templateUrl: './dashboard.page.html',
   styleUrls: ['./dashboard.page.scss'],
-  providers: [MyScopedService]
+  providers: [MyScopedService] // Scoped service itt van regisztrálva
 })
-export class DashboardPage {
-
-  counterValue: number = 0;
-
+export class DashboardPage{
   constructor(private myScopedService: MyScopedService) {}
 
-  increment() {
-    this.myScopedService.incrementCounter();
-    this.counterValue = this.myScopedService.getCounter();
+  stopWidgets() {
+    this.myScopedService.stopWidgets();
   }
 }
-
