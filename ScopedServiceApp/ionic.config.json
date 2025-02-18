@@ -1,0 +1,7 @@
+{
+  "name": "ScopedServiceApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
