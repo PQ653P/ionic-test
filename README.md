@@ -32,6 +32,12 @@
     ionic serve
     ```
 
+4. **Dashboard page**:
+    A widgetek ezen az oldalon vannak:
+    ```bash
+    http://localhost:{port}/dashboard
+    ```
+
 ---
 
 ##  **Funkciók és Megvalósítás**
