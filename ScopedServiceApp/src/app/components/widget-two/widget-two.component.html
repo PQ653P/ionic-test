@@ -1,1 +1,7 @@
-<p>Widget Two: {{ randomValue }}</p>
+<ion-card class="widget-card" [class.pulse]="animate">
+    <ion-card-header>
+      <ion-card-title>Random Number</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>{{ randomValue }}</ion-card-content>
+  </ion-card>
+  
