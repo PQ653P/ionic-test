@@ -1,0 +1,26 @@
+.widget-card {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .pulse {
+    animation: flash 0.3s ease-in-out;
+  }
+  
+  @keyframes flash {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 0, 1);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+    }
+  }
